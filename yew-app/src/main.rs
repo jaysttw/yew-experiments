@@ -1,4 +1,4 @@
-use yew::prelude::*
+use yew::prelude::*;
 
 enum Msg {
     AddOne,
@@ -24,7 +24,7 @@ impl Component for Model {
 
     fn update(&mut self, msg: Self::Message) -> ShouldRender {
         match msg {
-            Msg::AddOne -> {
+            Msg::AddOne => {
                 self.value += 1;
                 // the value has changed so we need to re-render it
                 true
